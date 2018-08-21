@@ -42,4 +42,4 @@ let mapDispatchToProps = (dispatch) => {
 }
 
 
-export default connect(mapDispatchToProps)(Dashboard);
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
