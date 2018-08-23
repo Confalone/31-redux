@@ -36,7 +36,7 @@ export default class CategoryItem extends Component {
     return (
       <div> 
         <span onClick={this.showEditForm}>{this.props.category.name}</span>
-        <span id='budget' onClick={this.showEditForm}>${this.props.category.budget}</span>
+        <span id='budget-item' onClick={this.showEditForm}>${this.props.category.budget}</span>
         <button onClick={this.deleteCategory}>x</button>
         {this.state.editing && <CategoryForm onComplete={this.updateCategory} buttonText="update" category={this.props.category} />}
       </div>
