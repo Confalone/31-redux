@@ -7,7 +7,7 @@ export default class CategoryForm extends Component {
     this.state = {
       name: '',
       budget: '',
-    }
+    };
     this.handleCategoryChange = this.handleCategoryChange.bind(this);
     this.handleBudgetChange = this.handleBudgetChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -27,7 +27,7 @@ export default class CategoryForm extends Component {
     this.setState({
       name: '',
       budget: '',
-    })
+    });
   }
   
   render() { 
@@ -48,6 +48,6 @@ export default class CategoryForm extends Component {
       
       </form>
       
-    )
+    );
   }
 }
